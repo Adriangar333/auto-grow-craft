@@ -4,15 +4,15 @@ import nexaliaLogo from "@/assets/nexalia-logo.png";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#E5E9EF] border-b border-border/30 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src={nexaliaLogo} 
               alt="Nexalia Business Center" 
-              className="h-12 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
           </div>
 
