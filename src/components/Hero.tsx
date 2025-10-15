@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -15,52 +16,65 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 mb-8 backdrop-blur-sm">
-            <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">Marketing Automation Expert</span>
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto animate-fade-in">
+          {/* Left Column - Photo */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative">
+              <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
+              <img 
+                src={profilePhoto} 
+                alt="Adrián García - Marketing Automation Specialist" 
+                className="relative rounded-2xl shadow-2xl w-full max-w-md"
+              />
+            </div>
           </div>
 
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Especialista en{" "}
-            <span className="text-accent">Marketing Automation</span> & Growth
-          </h1>
+          {/* Right Column - Content */}
+          <div className="text-center md:text-left">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 mb-6 backdrop-blur-sm">
+              <Sparkles className="w-4 h-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">Marketing Automation Expert</span>
+            </div>
 
-          {/* Professional summary */}
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Profesional en Negocios Internacionales con especialización en la creación de 
-            soluciones de marketing digital y automatización de procesos. Mi enfoque es doble: 
-            desarrollar sitios web que capturen y conviertan, y diseñar flujos de trabajo con 
-            <span className="font-semibold text-accent"> n8n</span> que automaticen la comunicación, 
-            nutran leads y optimicen las operaciones de marketing para{" "}
-            <span className="font-semibold text-accent">maximizar el retorno de inversión</span>.
-          </p>
+            {/* Main heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+              Transformo estrategias de{" "}
+              <span className="text-accent">Marketing Digital</span> en resultados medibles
+            </h1>
 
-          <p className="text-base md:text-lg text-primary-foreground/80 mb-12 max-w-2xl mx-auto">
-            Tengo la capacidad de entender los objetivos de negocio y traducirlos en 
-            herramientas tecnológicas eficientes y medibles.
-          </p>
+            {/* Professional summary */}
+            <p className="text-base md:text-lg text-primary-foreground/90 mb-6 leading-relaxed">
+              Experto en automatización de procesos de marketing y desarrollo web orientado a conversión. 
+              Diseño sistemas inteligentes con <span className="font-semibold text-accent">n8n</span> que 
+              nutren leads, optimizan campañas y{" "}
+              <span className="font-semibold text-accent">maximizan el ROI</span> de tu inversión en marketing.
+            </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              onClick={scrollToContact}
-              className="bg-accent hover:bg-accent/90 text-foreground font-semibold px-8 py-6 text-lg group"
-            >
-              Hablemos de tu proyecto
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => document.getElementById('casos-exito')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-primary-foreground/30 bg-transparent hover:bg-primary-foreground/10 text-primary-foreground font-semibold px-8 py-6 text-lg backdrop-blur-sm"
-            >
-              Ver casos de éxito
-            </Button>
+            <p className="text-sm md:text-base text-primary-foreground/80 mb-8">
+              Combino análisis de datos, desarrollo tecnológico y visión estratégica para crear 
+              soluciones de marketing que escalan tu negocio.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+              <Button 
+                size="lg" 
+                onClick={scrollToContact}
+                className="bg-accent hover:bg-accent/90 text-foreground font-semibold px-8 py-6 text-lg group"
+              >
+                Hablemos de tu proyecto
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => document.getElementById('casos-exito')?.scrollIntoView({ behavior: 'smooth' })}
+                className="border-2 border-primary-foreground/30 bg-transparent hover:bg-primary-foreground/10 text-primary-foreground font-semibold px-8 py-6 text-lg backdrop-blur-sm"
+              >
+                Ver casos de éxito
+              </Button>
+            </div>
           </div>
         </div>
       </div>

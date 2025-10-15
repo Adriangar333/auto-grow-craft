@@ -25,7 +25,7 @@ const CallToAction = () => {
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold h-auto py-4 group"
                 asChild
               >
-                <a href="mailto:tu-email@example.com" className="flex items-center justify-center gap-3">
+                <a href="mailto:adriangar713@gmail.com" className="flex items-center justify-center gap-3">
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span>Email</span>
                 </a>
@@ -37,7 +37,7 @@ const CallToAction = () => {
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold h-auto py-4 group"
                 asChild
               >
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                <a href="https://www.linkedin.com/in/adriangar333/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span>LinkedIn</span>
                 </a>
@@ -63,7 +63,7 @@ const CallToAction = () => {
             <div className="text-center space-y-4">
               <div className="flex items-center justify-center gap-2 text-primary-foreground/90">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">+57 XXX XXX XXXX</span>
+                <span className="text-sm">+57 314 584 9576</span>
               </div>
               
               <div className="pt-4 border-t border-primary-foreground/20">
