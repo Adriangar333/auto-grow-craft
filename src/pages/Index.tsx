@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Competencies from "@/components/Competencies";
 import CaseStudies from "@/components/CaseStudies";
@@ -6,6 +7,7 @@ import CallToAction from "@/components/CallToAction";
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <Header />
       <Hero />
       <Competencies />
       <CaseStudies />

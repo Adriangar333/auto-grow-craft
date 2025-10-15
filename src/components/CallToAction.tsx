@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Phone, Calendar } from "lucide-react";
+import { Mail, Linkedin, Phone, Calendar, Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -18,7 +18,7 @@ const CallToAction = () => {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid sm:grid-cols-3 gap-4 mb-8">
               <Button 
                 variant="secondary"
                 size="lg"
@@ -27,7 +27,7 @@ const CallToAction = () => {
               >
                 <a href="mailto:tu-email@example.com" className="flex items-center justify-center gap-3">
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>Enviar Email</span>
+                  <span>Email</span>
                 </a>
               </Button>
 
@@ -39,7 +39,23 @@ const CallToAction = () => {
               >
                 <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>Conectar en LinkedIn</span>
+                  <span>LinkedIn</span>
+                </a>
+              </Button>
+
+              <Button 
+                variant="secondary"
+                size="lg"
+                className="bg-accent text-foreground hover:bg-accent/90 font-semibold h-auto py-4 group"
+                asChild
+              >
+                <a 
+                  href="/CV_Marketing_Automation_Specialist.pdf" 
+                  download="CV_Marketing_Automation_Specialist.pdf"
+                  className="flex items-center justify-center gap-3"
+                >
+                  <Download className="w-5 h-5 group-hover:animate-bounce" />
+                  <span>Descargar CV</span>
                 </a>
               </Button>
             </div>
