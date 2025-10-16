@@ -71,11 +71,12 @@ const CallToAction = () => {
                   Prefiero una reunión virtual para discutir tu proyecto en detalle
                 </p>
                 <Button 
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold group"
+                  variant="secondary"
+                  size="lg"
+                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold h-auto py-4 group"
                   asChild
                 >
-                  <a href="https://calendly.com/tu-usuario" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://calendar.app.google/mE9UD16qv3tEVs3A7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
                     Agendar una reunión
                   </a>
