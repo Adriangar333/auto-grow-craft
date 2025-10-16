@@ -24,7 +24,7 @@ const Hero = () => {
               <img 
                 src={profilePhoto} 
                 alt="Adrián García - Marketing Automation Specialist" 
-                className="relative rounded-2xl shadow-2xl w-full max-w-md"
+                className="relative rounded-2xl shadow-2xl w-full h-auto"
               />
             </div>
           </div>

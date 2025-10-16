@@ -50,8 +50,8 @@ const CallToAction = () => {
                 asChild
               >
                 <a 
-                  href="/CV_Marketing_Automation_Specialist.pdf" 
-                  download="CV_Marketing_Automation_Specialist.pdf"
+                  href="/cv-adrian-garzon.pdf" 
+                  download="cv-adrian-garzon.pdf"
                   className="flex items-center justify-center gap-3"
                 >
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
